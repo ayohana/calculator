@@ -35,3 +35,12 @@ if (question === "1") {
 } else {
   alert ("You provided wrong input. Please, refresh the page")
 }    
+
+
+// Active code below to calculate BMI
+// var height = parseFloat(prompt("Enter your height in meters:"));
+// var weight = parseInt(prompt("Enter your weight in kg:"));
+
+// var bmi = weight / Math.pow(height, 2);
+
+// alert("Your BMI is " + bmi);

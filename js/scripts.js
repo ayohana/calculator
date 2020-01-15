@@ -16,19 +16,43 @@ var divide = function(number1, number2) {
 
 
 $(document).ready(function() {
-  $("form#userInput").submit(function(event) {
+  $("form#add").submit(function(event) {
     event.preventDefault();
-    var number1 = parseInt($("#firstInput").val());
-    var number2 = parseInt($("#secondInput").val());
+    var number1 = parseInt($("#add1").val());
+    var number2 = parseInt($("#add2").val());
     var result = add(number1, number2);
-    $("#output").text(result);
+    $("#outputAdd").text(result);
   });
+
+  $("form#subtract").submit(function(event) {
+    event.preventDefault();
+    var number1 = parseInt($("#subtract1").val());
+    var number2 = parseInt($("#subtract2").val());
+    var result = subtract(number1, number2);
+    $("#outputSubtract").text(result);
+  });
+
+  $("form#multiply").submit(function(event) {
+    event.preventDefault();
+    var number1 = parseInt($("#multiply1").val());
+    var number2 = parseInt($("#multiply2").val());
+    var result = multiply(number1, number2);
+    $("#outputMultiply").text(result);
+  });
+
+  $("form#divide").submit(function(event) {
+    event.preventDefault();
+    var number1 = parseInt($("#divide1").val());
+    var number2 = parseInt($("#divide2").val());
+    var result = divide(number1, number2);
+    $("#outputDivide").text(result);
+  });
+
 });
 
 
 // Activate code below to use branching
 // var question = prompt ("You would like to do add (1), substract (2), multiply (3) or divide (4)")
-
 // if (question === "1") {
 //   var num1 = parseInt(prompt("Enter a number:"));
 //   var num2 = parseInt(prompt("Enter another number:"));
